@@ -127,4 +127,8 @@ flex container in desktop design*/
     #btn-three:hover{
         background-color: hsl(179, 100%, 13%);
     }
+    
+    button{
+        margin: 3.75rem 0rem 1.25rem 0rem; /*60px 0px 20px 0px*/
+    }
 }

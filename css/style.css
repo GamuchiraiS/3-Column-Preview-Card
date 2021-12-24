@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    background-color: hsl(0, 0%, 95%);
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    margin: 1.875rem; /*30px*/
+    overflow: hidden;
+    border-radius: 0.375rem; /*6px*/
+}
+
+.col {
+    padding: 2.5rem; /*40px*/
+}
+
+.col-one{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.col-two{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.col-three{
+    background-color: hsl(179, 100%, 13%);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 1.875rem; /*30px*/
+}
+
+p {
+    opacity: 0.7;
+}
+
+button, p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 0.9375rem;  /*10px*/
+}
+
+button{
+    height: 2.5rem; /*40px*/
+    width: 7.5rem; /*120px*/
+    border-radius: 1.25rem; /*20px*/
+    border: none;
+    margin-top: 0.625rem; /*10px*/
+}
+
+#btn-one{
+    color: hsl(31, 77%, 52%);
+}
+
+#btn-two{
+    color: hsl(184, 100%, 22%);
+}
+
+#btn-three{
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution{
+    font-size: 0.9375rem; /*15px*/
+    font-family: 'Lexend Deca', sans-serif;
+    color: black;
+}
+
+/* NOTE TO SELF: For desktop design, make flex-direction row in .container. .container becomes
+flex container in desktop design*/
+
+@media (min-width: 1025px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card{
+        margin-top: 4.375rem; /*70px*/
+    }
+
+    .col {
+        padding: 2.5rem; /*40px*/
+        max-height: 50.5rem; /*600px*/
+        max-width: 17.5rem; /*280px*/
+    }
+
+    .col {
+        padding: 2.1875rem; /*35px*/
+    }
+
+    #btn-one:hover, #btn-two:hover, #btn-three:hover{
+        cursor: pointer;
+        color: hsl(0, 0%, 95%);
+        border: solid hsl(0, 0%, 95%) 0.125rem; /*2px*/
+    }
+
+    #btn-one:hover{
+        background-color: hsl(31, 77%, 52%);
+    }
+    
+    #btn-two:hover{
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    #btn-three:hover{
+        background-color: hsl(179, 100%, 13%);
+    }
+}
